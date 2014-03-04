@@ -17,24 +17,7 @@ void appmessage_init(void) {
 }
 
 static void in_received_handler(DictionaryIterator *iter, void *context) {
-	// if (dict_find(iter, KEY_LIST)) {
-	// 	playerlist_in_received_handler(iter);
-	// 	return;
-	// }
-	// Tuple *player_tuple = dict_find(iter, KEY_PLAYER);
-	// if (player_tuple) {
-	// 	switch (player_tuple->value->int16) {
-	// 		case MediaPlayerPLEX:
-	// 			plex_in_received_handler(iter);
-	// 			break;
-	// 		case MediaPlayerVLC:
-	// 			vlc_in_received_handler(iter);
-	// 			break;
-	// 		case MediaPlayerXBMC:
-	// 			xbmc_in_received_handler(iter);
-	// 			break;
-	// 	}
-	// }
+
 }
 
 static void in_dropped_handler(AppMessageResult reason, void *context) {
@@ -42,43 +25,9 @@ static void in_dropped_handler(AppMessageResult reason, void *context) {
 }
 
 static void out_sent_handler(DictionaryIterator *sent, void *context) {
-	// if (dict_find(sent, KEY_LIST)) {
-	// 	playerlist_out_sent_handler(sent);
-	// 	return;
-	// }
-	// Tuple *player_tuple = dict_find(sent, KEY_PLAYER);
-	// if (player_tuple) {
-	// 	switch (player_tuple->value->int16) {
-	// 		case MediaPlayerPLEX:
-	// 			plex_out_sent_handler(sent);
-	// 			break;
-	// 		case MediaPlayerVLC:
-	// 			vlc_out_sent_handler(sent);
-	// 			break;
-	// 		case MediaPlayerXBMC:
-	// 			xbmc_out_sent_handler(sent);
-	// 			break;
-	// 	}
-	// }
+
 }
 
 static void out_failed_handler(DictionaryIterator *failed, AppMessageResult reason, void *context) {
-	// if (dict_find(failed, KEY_LIST)) {
-	// 	playerlist_out_failed_handler(failed, reason);
-	// 	return;
-	// }
-	// Tuple *player_tuple = dict_find(failed, KEY_PLAYER);
-	// if (player_tuple) {
-	// 	switch (player_tuple->value->int16) {
-	// 		case MediaPlayerPLEX:
-	// 			plex_out_failed_handler(failed, reason);
-	// 			break;
-	// 		case MediaPlayerVLC:
-	// 			vlc_out_failed_handler(failed, reason);
-	// 			break;
-	// 		case MediaPlayerXBMC:
-	// 			xbmc_out_failed_handler(failed, reason);
-	// 			break;
-	// 	}
-	// }
+
 }
