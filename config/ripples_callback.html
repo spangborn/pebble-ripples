@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Ripples Config Callback</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    	<script src="js/jquery.parsequery.js"></script>
+    	<script type="text/javascript">
+            function check_query() {
+                var q = location.hash.toString();
+                if(q !== null) {
+                    var result = $.parseQuery(q.slice(1)); // Remove "#"
+
+                    console.log("pebblejs://close#" + JSON.stringify(result));
+                    window.location.href = "pebblejs://close#" + encodeURIComponent(JSON.stringify(result.keys));
+
+                }
+            }
+    	    $(document).ready(function() {
+                check_query();
+            });
+    	</script>
+    </head>
+    <body>
+        <!-- Redirect to Pebble -->
+    </body>
+</html>

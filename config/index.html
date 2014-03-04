@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ripples Config</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+		<h3 class=""><small class="glyphicon glyphicon-cog"></small> Ripples</h3>
+    	<div class="well">
+			<button class="btn btn-lg btn-primary btn-block" id="authorize-button"><span class="glyphicon glyphicon-user"></span>  Authenticate with Google</button>
+			<button class="btn btn-lg btn-info btn-block hide" id="test-api">Test API</button>
+			<button class="btn btn-lg btn-success btn-block">Save</button>
+		</div>
+
+    </div>
+    <div class="footer container">
+    	<p><a href="http://github.com/spangborn/pebble-ripples">Ripples</a> by <a href="http://twitter.com/spangborn">Sawyer Pangborn</a></p>
+    </div>
+	<script type="text/javascript">
+		$().ready(function () {
+
+			$("#configure").submit(function(e) {
+
+				var j = {
+					"oauth_token" : ""
+				};
+
+	    		localStorage.setItem("distance", d);
+
+				window.location.href = "pebblejs://close#" + JSON.stringify(j);
+
+				e.preventDefault();
+			});
+		});
+
+</script>
+<script src="js/ripples.keys.js"></script>
+<script src="js/ripples.auth.js"></script>
+<script src="js/ripples.api.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+</body>
+</html>
