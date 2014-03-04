@@ -3,7 +3,7 @@
  */
 
 var ripples = {
-    "config" : "http://narsil.local/config/",
+    "config" : "https://spangborn.github.io/pebble-ripples/index.html",
     "access_token" : localStorage.getItem("access_token"),
     "client_id"    : localStorage.getItem("client_id")
 };
