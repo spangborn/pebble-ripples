@@ -64,7 +64,7 @@ function queryProfiles(accountId, webpropertyId) {
 function handleProfiles(results) {
   if (!results.code) {
     if (results && results.items && results.items.length) {
-
+        console.log(results);
       // Get the first View (Profile) ID
       var firstProfileId = results.items[0].id;
 
